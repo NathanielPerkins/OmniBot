@@ -1,4 +1,4 @@
-update=2/4/2016 7:34:41 PM
+update=Fri 18 Mar 2016 13:32:23 AEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,17 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=
@@ -58,15 +69,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/nathan/thallazar@gmail.com/Git/KiCad/Libraries/NathanPerkins
-LibName31=E:/Google Drive/Git/KiCad/Libraries/NathanPerkins
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName30=/home/nathanjp/thallazar@gmail.com/Git/KiCad/Libraries/NathanPerkins

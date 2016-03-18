@@ -28,18 +28,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:NathanPerkins
 LIBS:SystemController-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Yatagarasu"
+Date "2016-03-16"
+Rev "1.0"
+Comp "EESS"
+Comment1 "Last Reviewed: Nathan Perkins"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -257,7 +256,7 @@ F 3 "" H 2100 3380 50  0000 C CNN
 $EndComp
 Text Notes 1440 4560 0    50   ~ 0
 Make sure 12V node \nis S->D and the \nPower Control node\nis D->S
-Text Label 3895 1455 2    50   ~ 0
+Text Label 3895 1565 2    50   ~ 0
 USART_CLK
 Text Label 7540 5030 0    60   ~ 0
 3V3
@@ -886,19 +885,19 @@ LED Forward Voltage drop = 2v/20mA\n\n
 $Comp
 L CONN_02X20 P3
 U 1 1 56A9C8CF
-P 3215 1605
-F 0 "P3" H 3215 2655 50  0000 C CNN
-F 1 "Raspberry Pi A+ Connectors" V 3215 1605 50  0000 C CNN
-F 2 "NPFootprints:Raspberry_Pi_A+" H 3215 655 50  0001 C CNN
-F 3 "" H 3215 655 50  0000 C CNN
-	1    3215 1605
+P 3215 1715
+F 0 "P3" H 3215 2765 50  0000 C CNN
+F 1 "Raspberry Pi A+ Connectors" V 3215 1715 50  0000 C CNN
+F 2 "NPFootprints:Raspberry_Pi_A+" H 3215 765 50  0001 C CNN
+F 3 "" H 3215 765 50  0000 C CNN
+	1    3215 1715
 	1    0    0    -1  
 $EndComp
-Text Label 3915 855  2    60   ~ 0
+Text Label 3915 965  2    60   ~ 0
 GND
-Text Label 2615 755  0    50   ~ 0
+Text Label 2615 865  0    50   ~ 0
 I2C_SDA
-Text Label 2615 855  0    50   ~ 0
+Text Label 2615 965  0    50   ~ 0
 I2C_SCL
 $Comp
 L Seeedstudio_Buck_5v U2
@@ -915,7 +914,7 @@ Text Label 5200 900  0    60   ~ 0
 Buck_In
 Text Label 6600 900  2    60   ~ 0
 5v
-Text Label 3915 655  2    60   ~ 0
+Text Label 3915 765  2    60   ~ 0
 5v
 $Comp
 L GND #PWR019
@@ -955,25 +954,25 @@ Text Label 6780 4620 1    60   ~ 0
 Direction_2
 Text Label 7380 1360 3    60   ~ 0
 Direction_3
-Text Label 2615 1655 0    50   ~ 0
+Text Label 2615 1765 0    50   ~ 0
 SPI_MISO
-Text Label 2615 1555 0    50   ~ 0
+Text Label 2615 1665 0    50   ~ 0
 SPI_MOSI
-Text Label 2615 1755 0    50   ~ 0
+Text Label 2615 1865 0    50   ~ 0
 SPI_CLK
-Text Label 2625 1855 0    60   ~ 0
+Text Label 2625 1965 0    60   ~ 0
 GND
-Text Label 3895 1555 2    60   ~ 0
+Text Label 3895 1665 2    60   ~ 0
 GND
-Text Label 2635 1055 0    60   ~ 0
+Text Label 2635 1165 0    60   ~ 0
 GND
-Text Label 2635 2555 0    60   ~ 0
+Text Label 2635 2665 0    60   ~ 0
 GND
-Text Label 3885 2055 2    60   ~ 0
+Text Label 3885 2165 2    60   ~ 0
 GND
-Text Label 3895 2255 2    60   ~ 0
+Text Label 3895 2365 2    60   ~ 0
 GND
-Text Label 3885 1655 2    60   ~ 0
+Text Label 3885 1765 2    60   ~ 0
 SPI_SS
 Text Label 8870 3560 2    60   ~ 0
 SPI_SS
@@ -1017,12 +1016,12 @@ Buck_In
 $Comp
 L CONN_01X10 P4
 U 1 1 56AEC8A5
-P 10220 2480
-F 0 "P4" H 10220 3030 50  0000 C CNN
-F 1 "Harwin-10P" V 10320 2480 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 10220 2480 50  0001 C CNN
-F 3 "" H 10220 2480 50  0000 C CNN
-	1    10220 2480
+P 10940 2480
+F 0 "P4" H 10940 3030 50  0000 C CNN
+F 1 "Harwin-10P" V 11040 2480 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 10940 2480 50  0001 C CNN
+F 3 "" H 10940 2480 50  0000 C CNN
+	1    10940 2480
 	1    0    0    -1  
 $EndComp
 Text Label 7080 1360 3    60   ~ 0
@@ -1031,53 +1030,53 @@ Text Label 5830 3560 0    60   ~ 0
 nFault_2
 Text Label 7480 1360 3    60   ~ 0
 nFault_1
-Text Label 9690 2530 0    50   ~ 0
+Text Label 10410 2530 0    50   ~ 0
 I2C_SCL
-Text Label 9685 2430 0    50   ~ 0
+Text Label 10405 2430 0    50   ~ 0
 I2C_SDA
-Text Label 9505 2930 0    60   ~ 0
+Text Label 10225 2930 0    60   ~ 0
 Step_PWM_1
-Text Label 9575 2730 0    60   ~ 0
+Text Label 10295 2730 0    60   ~ 0
 Direction_1
-Text Label 9650 2330 0    60   ~ 0
+Text Label 10370 2330 0    60   ~ 0
 nFault_1
-Text Label 9565 2130 0    60   ~ 0
+Text Label 10285 2130 0    60   ~ 0
 ResSleep_1
-Text Label 9680 2630 0    60   ~ 0
+Text Label 10400 2630 0    60   ~ 0
 GND
 $Comp
 L CONN_01X10 P5
 U 1 1 56AF7EDA
-P 10230 3580
-F 0 "P5" H 10230 4130 50  0000 C CNN
-F 1 "Harwin-10P" V 10330 3580 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 10230 3580 50  0001 C CNN
-F 3 "" H 10230 3580 50  0000 C CNN
-	1    10230 3580
+P 10950 3580
+F 0 "P5" H 10950 4130 50  0000 C CNN
+F 1 "Harwin-10P" V 11050 3580 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 10950 3580 50  0001 C CNN
+F 3 "" H 10950 3580 50  0000 C CNN
+	1    10950 3580
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X10 P6
 U 1 1 56AF8143
-P 10230 4690
-F 0 "P6" H 10230 5240 50  0000 C CNN
-F 1 "Harwin-10P" V 10330 4690 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 10230 4690 50  0001 C CNN
-F 3 "" H 10230 4690 50  0000 C CNN
-	1    10230 4690
+P 10950 4690
+F 0 "P6" H 10950 5240 50  0000 C CNN
+F 1 "Harwin-10P" V 11050 4690 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 10950 4690 50  0001 C CNN
+F 3 "" H 10950 4690 50  0000 C CNN
+	1    10950 4690
 	1    0    0    -1  
 $EndComp
-Text Label 3905 955  2    50   ~ 0
+Text Label 3905 1065 2    50   ~ 0
 USART_TX
-Text Label 3905 1055 2    50   ~ 0
+Text Label 3905 1165 2    50   ~ 0
 USART_RX
-Text Label 3915 755  2    60   ~ 0
+Text Label 3915 865  2    60   ~ 0
 5v
-Text Label 3900 1155 2    60   ~ 0
+Text Label 3900 1265 2    60   ~ 0
 S_IO2
-Text Label 3905 1255 2    60   ~ 0
+Text Label 3905 1365 2    60   ~ 0
 S_IO3
-Text Label 3910 1355 2    60   ~ 0
+Text Label 3910 1465 2    60   ~ 0
 S_IO5
 $Comp
 L LED D9
@@ -1476,13 +1475,13 @@ Wire Notes Line
 Wire Notes Line
 	3610 5970 6570 5970
 Wire Wire Line
-	3465 655  3915 655 
+	3465 765  3915 765 
 Wire Wire Line
-	3465 855  3915 855 
+	3465 965  3915 965 
 Wire Wire Line
-	2965 755  2615 755 
+	2965 865  2615 865 
 Wire Wire Line
-	2965 855  2615 855 
+	2965 965  2615 965 
 Wire Wire Line
 	5200 900  5600 900 
 Wire Wire Line
@@ -1508,25 +1507,25 @@ Wire Wire Line
 Wire Wire Line
 	7080 1360 7080 1860
 Wire Wire Line
-	2615 1555 2965 1555
+	2615 1665 2965 1665
 Wire Wire Line
-	2615 1655 2965 1655
+	2615 1765 2965 1765
 Wire Wire Line
-	2965 1755 2615 1755
+	2965 1865 2615 1865
 Wire Wire Line
-	2965 1855 2625 1855
+	2965 1965 2625 1965
 Wire Wire Line
-	3465 1555 3895 1555
+	3465 1665 3895 1665
 Wire Wire Line
-	2965 1055 2635 1055
+	2965 1165 2635 1165
 Wire Wire Line
-	3465 2055 3885 2055
+	3465 2165 3885 2165
 Wire Wire Line
-	3465 2255 3895 2255
+	3465 2365 3895 2365
 Wire Wire Line
-	2965 2555 2635 2555
+	2965 2665 2635 2665
 Wire Wire Line
-	3465 1655 3885 1655
+	3465 1765 3885 1765
 Wire Wire Line
 	6070 7220 6070 7270
 Wire Wire Line
@@ -1534,27 +1533,27 @@ Wire Wire Line
 Wire Wire Line
 	6070 6130 6070 6470
 Wire Wire Line
-	9650 2030 10020 2030
+	10370 2030 10740 2030
 Wire Wire Line
-	9565 2130 10020 2130
+	10285 2130 10740 2130
 Wire Wire Line
-	10020 2230 9650 2230
+	10740 2230 10370 2230
 Wire Wire Line
-	10020 2330 9650 2330
+	10740 2330 10370 2330
 Wire Wire Line
-	9685 2430 10020 2430
+	10405 2430 10740 2430
 Wire Wire Line
-	9575 2730 10020 2730
+	10295 2730 10740 2730
 Wire Wire Line
-	9505 2930 10020 2930
+	10225 2930 10740 2930
 Wire Wire Line
-	9680 2830 10020 2830
+	10400 2830 10740 2830
 Wire Wire Line
-	3465 955  3905 955 
+	3465 1065 3905 1065
 Wire Wire Line
-	3465 1055 3905 1055
+	3465 1165 3905 1165
 Wire Wire Line
-	3465 755  3915 755 
+	3465 865  3915 865 
 Wire Wire Line
 	6980 1860 6980 1570
 Wire Wire Line
@@ -1580,7 +1579,7 @@ F 3 "" H 5740 7020 60  0000 C CNN
 	1    5740 7020
 	0    -1   -1   0   
 $EndComp
-Text Label 9650 2030 0    60   ~ 0
+Text Label 10370 2030 0    60   ~ 0
 Buck_In
 Wire Wire Line
 	7540 4730 7540 4550
@@ -1601,13 +1600,13 @@ Wire Wire Line
 Wire Wire Line
 	2560 6560 2640 6560
 Wire Wire Line
-	3465 1155 3900 1155
+	3465 1265 3900 1265
 Wire Wire Line
-	3465 1255 3905 1255
+	3465 1365 3905 1365
 Wire Wire Line
-	3465 1355 3910 1355
+	3465 1465 3910 1465
 Wire Wire Line
-	3465 1455 3895 1455
+	3465 1565 3895 1565
 $Comp
 L R R4
 U 1 1 56B46F53
@@ -1722,92 +1721,112 @@ Wire Wire Line
 	880  830  1240 830 
 Text Label 7780 1360 3    60   ~ 0
 Direction_1
-Text Label 9650 2230 0    60   ~ 0
+Text Label 10370 2230 0    60   ~ 0
 Buck_In
 Wire Wire Line
-	9690 2530 10020 2530
+	10410 2530 10740 2530
 Wire Wire Line
-	9680 2630 10020 2630
-Text Label 9680 2830 0    60   ~ 0
+	10400 2630 10740 2630
+Text Label 10400 2830 0    60   ~ 0
 GND
-Text Label 9700 4740 0    50   ~ 0
+Text Label 10420 4740 0    50   ~ 0
 I2C_SCL
-Text Label 9695 4640 0    50   ~ 0
+Text Label 10415 4640 0    50   ~ 0
 I2C_SDA
-Text Label 9515 5140 0    60   ~ 0
+Text Label 10235 5140 0    60   ~ 0
 Step_PWM_3
-Text Label 9585 4940 0    60   ~ 0
+Text Label 10305 4940 0    60   ~ 0
 Direction_3
-Text Label 9660 4540 0    60   ~ 0
+Text Label 10380 4540 0    60   ~ 0
 nFault_3
-Text Label 9575 4340 0    60   ~ 0
+Text Label 10295 4340 0    60   ~ 0
 ResSleep_3
-Text Label 9690 4840 0    60   ~ 0
+Text Label 10410 4840 0    60   ~ 0
 GND
 Wire Wire Line
-	9660 4240 10030 4240
+	10380 4240 10750 4240
 Wire Wire Line
-	9575 4340 10030 4340
+	10295 4340 10750 4340
 Wire Wire Line
-	10030 4440 9660 4440
+	10750 4440 10380 4440
 Wire Wire Line
-	10030 4540 9660 4540
+	10750 4540 10380 4540
 Wire Wire Line
-	9695 4640 10030 4640
+	10415 4640 10750 4640
 Wire Wire Line
-	9585 4940 10030 4940
+	10305 4940 10750 4940
 Wire Wire Line
-	9515 5140 10030 5140
+	10235 5140 10750 5140
 Wire Wire Line
-	9690 5040 10030 5040
-Text Label 9660 4240 0    60   ~ 0
+	10410 5040 10750 5040
+Text Label 10380 4240 0    60   ~ 0
 Buck_In
-Text Label 9660 4440 0    60   ~ 0
+Text Label 10380 4440 0    60   ~ 0
 Buck_In
 Wire Wire Line
-	9700 4740 10030 4740
+	10420 4740 10750 4740
 Wire Wire Line
-	9690 4840 10030 4840
-Text Label 9690 5040 0    60   ~ 0
+	10410 4840 10750 4840
+Text Label 10410 5040 0    60   ~ 0
 GND
-Text Label 9700 3630 0    50   ~ 0
+Text Label 10420 3630 0    50   ~ 0
 I2C_SCL
-Text Label 9695 3530 0    50   ~ 0
+Text Label 10415 3530 0    50   ~ 0
 I2C_SDA
-Text Label 9515 4030 0    60   ~ 0
+Text Label 10235 4030 0    60   ~ 0
 Step_PWM_2
-Text Label 9585 3830 0    60   ~ 0
+Text Label 10305 3830 0    60   ~ 0
 Direction_2
-Text Label 9660 3430 0    60   ~ 0
+Text Label 10380 3430 0    60   ~ 0
 nFault_2
-Text Label 9575 3230 0    60   ~ 0
+Text Label 10295 3230 0    60   ~ 0
 ResSleep_2
-Text Label 9690 3730 0    60   ~ 0
+Text Label 10410 3730 0    60   ~ 0
 GND
 Wire Wire Line
-	9660 3130 10030 3130
+	10380 3130 10750 3130
 Wire Wire Line
-	9575 3230 10030 3230
+	10295 3230 10750 3230
 Wire Wire Line
-	10030 3330 9660 3330
+	10750 3330 10380 3330
 Wire Wire Line
-	10030 3430 9660 3430
+	10750 3430 10380 3430
 Wire Wire Line
-	9695 3530 10030 3530
+	10415 3530 10750 3530
 Wire Wire Line
-	9585 3830 10030 3830
+	10305 3830 10750 3830
 Wire Wire Line
-	9515 4030 10030 4030
+	10235 4030 10750 4030
 Wire Wire Line
-	9690 3930 10030 3930
-Text Label 9660 3130 0    60   ~ 0
+	10410 3930 10750 3930
+Text Label 10380 3130 0    60   ~ 0
 Buck_In
-Text Label 9660 3330 0    60   ~ 0
+Text Label 10380 3330 0    60   ~ 0
 Buck_In
 Wire Wire Line
-	9700 3630 10030 3630
+	10420 3630 10750 3630
 Wire Wire Line
-	9690 3730 10030 3730
-Text Label 9690 3930 0    60   ~ 0
+	10410 3730 10750 3730
+Text Label 10410 3930 0    60   ~ 0
 GND
+Wire Notes Line
+	10140 1890 10140 5290
+Wire Notes Line
+	10140 5290 11160 5290
+Wire Notes Line
+	11160 5290 11160 1890
+Wire Notes Line
+	11160 1890 10140 1890
+Wire Notes Line
+	2550 610  2550 2790
+Wire Notes Line
+	2550 2790 4000 2790
+Wire Notes Line
+	4000 2790 4000 610 
+Wire Notes Line
+	4000 610  2550 610 
+Text Notes 2550 610  0    75   ~ 0
+RPi A+ Connections\n
+Text Notes 10140 1890 0    75   ~ 0
+Motor Connections\n
 $EndSCHEMATC
