@@ -1,6 +1,7 @@
 # OmniBot
 EESS Modular Robotics Platform
 ![Alt text](Screenshots/omnibot-preview.png "OmniBot Render")
+
 An open source modular robotics platform designed with KiCAD and FreeCAD.
 
 1: System Controller
