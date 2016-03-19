@@ -12,7 +12,7 @@ Main Processor unit consists of a Raspberry Pi A+ for path planning and general 
 Requirements: The Electronics design require the following footprint libraries for KiCAD
 
 https://github.com/NathanielPerkins/NPFootprints.pretty
-![Alt text](Screenshots/Electronics/Bottom.png "System Controller")
+![Alt text](Screenshots/Electronics/SystemController.png "System Controller")
 
 2: Mechanical
 

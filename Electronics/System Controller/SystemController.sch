@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:NathanPerkins
 LIBS:SystemController-cache
 EELAYER 25 0
 EELAYER END
@@ -171,7 +172,7 @@ Text Notes 1310 1480 0    75   ~ 0
 Boot Mode
 Text Label 7180 1490 3    75   ~ 0
 BOOT0
-Text Label 7480 4510 1    75   ~ 0
+Text Label 7480 4565 1    75   ~ 0
 BOOT1
 $Comp
 L Q_NMOS_GSD Q1
@@ -258,28 +259,28 @@ Text Notes 1440 4560 0    50   ~ 0
 Make sure 12V node \nis S->D and the \nPower Control node\nis D->S
 Text Label 3895 1565 2    50   ~ 0
 USART_CLK
-Text Label 7540 5030 0    60   ~ 0
+Text Label 7580 5095 2    60   ~ 0
 3V3
 $Comp
 L R R20
 U 1 1 5667B5F1
-P 7690 4880
-F 0 "R20" H 7630 4730 50  0000 C CNN
-F 1 "R_I2C" V 7690 4880 30  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7620 4880 50  0001 C CNN
-F 3 "" H 7690 4880 50  0000 C CNN
-	1    7690 4880
+P 7680 4880
+F 0 "R20" V 7590 4875 50  0000 C CNN
+F 1 "R_I2C" V 7680 4880 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7610 4880 50  0001 C CNN
+F 3 "" H 7680 4880 50  0000 C CNN
+	1    7680 4880
 	-1   0    0    1   
 $EndComp
 $Comp
 L R R19
 U 1 1 5667B745
-P 7540 4880
-F 0 "R19" H 7480 4730 50  0000 C CNN
-F 1 "R_I2C" V 7540 4880 30  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7470 4880 50  0001 C CNN
-F 3 "" H 7540 4880 50  0000 C CNN
-	1    7540 4880
+P 7580 4880
+F 0 "R19" V 7655 4880 50  0000 C CNN
+F 1 "R_I2C" V 7580 4880 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7510 4880 50  0001 C CNN
+F 3 "" H 7580 4880 50  0000 C CNN
+	1    7580 4880
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1121,15 +1122,13 @@ Wire Wire Line
 	880  930  1010 930 
 Connection ~ 1010 830 
 Wire Notes Line
-	510  610  2480 610 
+	510  610  2520 610 
 Wire Notes Line
 	510  1360 2410 1360
 Wire Notes Line
 	510  1360 510  610 
 Wire Notes Line
-	2400 1360 2480 1360
-Wire Notes Line
-	2480 1360 2480 610 
+	2400 1360 2520 1360
 Wire Wire Line
 	6180 3260 5940 3260
 Wire Wire Line
@@ -1179,7 +1178,7 @@ Wire Notes Line
 Wire Wire Line
 	7180 1860 7180 1490
 Wire Wire Line
-	7480 4160 7480 4510
+	7480 4160 7480 4565
 Wire Wire Line
 	540  3960 1100 3960
 Wire Wire Line
@@ -1214,8 +1213,6 @@ Wire Notes Line
 	2250 2870 2250 4850
 Wire Notes Line
 	2250 4850 520  4850
-Wire Wire Line
-	7540 5030 7690 5030
 Wire Wire Line
 	1290 6850 1430 6850
 Wire Wire Line
@@ -1353,8 +1350,6 @@ Wire Wire Line
 	7680 1860 7680 1500
 Wire Wire Line
 	8480 2660 8870 2660
-Wire Wire Line
-	8480 2860 8870 2860
 Connection ~ 2060 6840
 Connection ~ 2640 6840
 Wire Wire Line
@@ -1376,9 +1371,9 @@ Wire Wire Line
 Wire Wire Line
 	8480 3560 8870 3560
 Wire Wire Line
-	7580 4160 7580 4550
+	7580 4160 7580 4730
 Wire Wire Line
-	7680 4160 7680 4545
+	7680 4160 7680 4730
 Wire Wire Line
 	6180 3360 5940 3360
 Wire Wire Line
@@ -1398,8 +1393,6 @@ Wire Wire Line
 Wire Wire Line
 	7280 4160 7280 4710
 Wire Wire Line
-	7380 4160 7380 4520
-Wire Wire Line
 	5750 2660 6180 2660
 Wire Wire Line
 	5750 2760 6180 2760
@@ -1407,8 +1400,6 @@ Wire Wire Line
 	5750 2860 6180 2860
 Wire Wire Line
 	5750 2960 6180 2960
-Wire Wire Line
-	8870 2760 8480 2760
 Wire Wire Line
 	940  3610 2100 3610
 Wire Wire Line
@@ -1557,8 +1548,6 @@ Wire Wire Line
 Wire Wire Line
 	6980 1860 6980 1570
 Wire Wire Line
-	6180 2560 5880 2560
-Wire Wire Line
 	6400 7230 6400 7280
 Wire Wire Line
 	6400 6830 6400 6780
@@ -1581,14 +1570,6 @@ F 3 "" H 5740 7020 60  0000 C CNN
 $EndComp
 Text Label 10370 2030 0    60   ~ 0
 Buck_In
-Wire Wire Line
-	7540 4730 7540 4550
-Wire Wire Line
-	7540 4550 7580 4550
-Wire Wire Line
-	7680 4545 7690 4545
-Wire Wire Line
-	7690 4545 7690 4730
 Text Label 2560 6560 0    50   ~ 0
 OSC32_OUT
 Wire Wire Line
@@ -1829,4 +1810,16 @@ Text Notes 2550 610  0    75   ~ 0
 RPi A+ Connections\n
 Text Notes 10140 1890 0    75   ~ 0
 Motor Connections\n
+Wire Notes Line
+	2520 1360 2520 610 
+NoConn ~ 8480 2760
+NoConn ~ 8480 2860
+NoConn ~ 6180 2560
+NoConn ~ 7380 4160
+Wire Wire Line
+	7580 5030 7580 5095
+Wire Wire Line
+	7680 5030 7680 5095
+Wire Wire Line
+	7680 5095 7580 5095
 $EndSCHEMATC
