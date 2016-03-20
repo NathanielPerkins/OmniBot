@@ -2317,9 +2317,15 @@
   )
 
   (module NPFootprints:Yatagarsu_Logo (layer B.Cu) (tedit 56BD286C) (tstamp 56BD3267)
+<<<<<<< HEAD
+    (at 63.6 123.95 180)
+    (fp_text reference G*** (at -0.7 1.375 180) (layer F.SilkS) hide
+      (effects (font (thickness 0.3)))
+=======
     (at 72.475 107.875 180)
     (fp_text reference G*** (at 0.08 0.81 180) (layer B.SilkS) hide
       (effects (font (thickness 0.3)) (justify mirror))
+>>>>>>> master
     )
     (fp_text value LOGO (at 0.75 0 180) (layer B.SilkS) hide
       (effects (font (thickness 0.3)) (justify mirror))
@@ -5153,7 +5159,11 @@
       (xy -1.693333 2.421467) (xy -1.691785 2.424952) (xy -1.690511 2.424289)) (layer B.SilkS) (width 0.01))
   )
 
+<<<<<<< HEAD
+  (gr_text "Design: Nathan Perkins" (at 68.125 99.825) (layer B.SilkS) (tstamp 56ECA4F8)
+=======
   (gr_text "Design: Nathan Perkins" (at 68.409523 102.325) (layer B.SilkS) (tstamp 56ECA4F8)
+>>>>>>> master
     (effects (font (size 1 1) (thickness 0.1875)) (justify mirror))
   )
   (dimension 65 (width 0.3) (layer Margin)
@@ -5188,7 +5198,11 @@
   (gr_line (start 118.96 85.4) (end 60.96 85.4) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 122.46 137.9) (end 122.46 88.9) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 60.96 141.4) (end 118.96 141.4) (angle 90) (layer Edge.Cuts) (width 0.15))
+<<<<<<< HEAD
+  (gr_text "Yatagarasu v1.0" (at 67.825 97.625) (layer B.SilkS)
+=======
   (gr_text "Yatagarasu v1.0" (at 68.1 100.1) (layer B.SilkS)
+>>>>>>> master
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
 
